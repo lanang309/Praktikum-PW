@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lingkaran</title>
+</head>
+<body>
+    <input type="text" id="r">
+    <button onclick="hitung()">hitung</button>
+    <div id="luas"></div>
+    <div id="keliling"></div>
+
+    <script>
+        function hitung(){
+            const PI = 3.14;
+            let r = Number(document.getElementById("r").value);
+            let luas = document.getElementById("luas")
+            let keliling = document.getElementById("keliling")
+            luas.innerHTML = "Luas : " + (PI * r * r);
+            keliling.innerHTML = "Keliling : " + (2 * PI * r);
+
+        }
+    </script>
+</body>
+</html>
