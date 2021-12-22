@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobil</title>
+</head>
+<body>
+  
+    <h1 id="kendaraan"></h1>
+    <button id="klakson" onclick=" sparepartklakson();"></button>
+    <p id="bunyi"></p>
+
+<button id="gas" onclick="pencetangas();" ></button>
+<p id="asep" >Kecepatan: 20 km</p>
+
+
+  <script>
+    // console.log('Hello World');
+    // window.alert('Hello World');
+    // document.write('Hello World');
+    document.getElementById('kendaraan').innerHTML = 'Mobil';
+    document.getElementById('klakson').innerHTML = 'klakson';
+    document.getElementById('bunyi').innerHTML = '.......................................................................................................................................'
+   
+    function sparepartklakson()  {
+        var bunyi = document.getElementById('bunyi');
+
+        bunyi.innerHTML = 'aaaaaaaaaaaaaaaaaaaaaaaaaaa';
+        bunyi.style.backgroundColor ='red'
+     }
+    
+     document.getElementById('gas').innerHTML = 'ngebut';
+
+     function pencetangas() {
+         var gas = document.getElementById('asep');
+
+         gas.innerHTML = 'Kecepatan: 80 km';
+        gas.style.backgroundColor ='red'
+     }
+
+  </script>
+</body>
+</html>
+

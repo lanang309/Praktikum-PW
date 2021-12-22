@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <script>
+        let siswa1 = {
+        nama:"Putra Prayoga",
+        umur:"20", 
+        berat:"60 kg", 
+        cetak : function() {
+            return this.firstName + "usianya" + this.umur;
+        }
+    };
+    let status_berat;
+    if(siswa1.berat > 80){
+        status_berat = "Gemuk";}
+    else if(siswa1.berat < 25){
+        status_berat = "Kurus";}
+    else{status_berat = " Berat ideal";}
+    console.log(siswa1.nama +  status_berat);
+  </script>
+</head>
+<body>
+    
+</body>
+</html>
